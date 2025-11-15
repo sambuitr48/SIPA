@@ -20,15 +20,14 @@ El sistema está desarrollado con Laravel, Blade y TailwindCSS, ofreciendo un es
 - PHP >= 8.2  
 - Composer  
 - Node.js >= 18  
- 
 
 ---
 
 ## 🔧 Instalación
 
 ```bash
-git clone https://github.com/tu-usuario/sipa.git
-cd sipa
+git clone https://github.com/sambuitr48/SIPA.git
+cd SIPA
 composer install
 npm install
 cp .env.example .env
