@@ -23,4 +23,21 @@ class User extends Authenticatable
         'password',
         'remember_token',
     ];
+
+    /**
+     * Relación: un usuario host puede administrar varios parqueaderos.
+     */
+    public function parkingLots()
+    {
+        return $this->hasMany(ParkingLot::class, 'user_id');
+    }
+
+    /**
+     * Relación: un usuario driver puede tener muchas reservas.
+     */
+    public function reservations()
+    {
+        return $this->hasMany(\App\Models\Reservation::class);
+    }
+
 }
